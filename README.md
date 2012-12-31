@@ -28,7 +28,6 @@ There should be one node manifest for each node.
 A node manifest is defined in the following way:
 
     # /etc/puppet/manifests/nodes/name.of.node.pp
-    # see: http://projects.puppetlabs.com/projects/1/wiki/Advanced_Puppet_Pattern
     node 'name.of.node' {
 
         ##
@@ -44,6 +43,8 @@ A node manifest is defined in the following way:
 
     # [end]
 
+see: [Advanced puppet pattern](http://projects.puppetlabs.com/projects/1/wiki/Advanced_Puppet_Pattern) for more up to date examples.
+
 #####The Yaml configuration files
 
 The script first tries to make contact with forman before reading the yaml 
@@ -54,7 +55,6 @@ is available at /etc/puppet/manifests/ruby.rb
 The yaml directory contains all the parameters that will be used by the puppet modules.
 
     # /etc/puppet/manifests/yaml/name.of.node.yml
-    # see: http://docs.puppetlabs.com/guides/external_nodes.html
     # This is the minimum of what have to be written
     ---
     classes:
@@ -72,3 +72,5 @@ The yaml directory contains all the parameters that will be used by the puppet m
     # Can be used in site.pp or any other node manifest
     # see: http://docs.puppetlabs.com/guides/environment.html
       environment: example
+
+see: [Guides for external nodes](http://docs.puppetlabs.com/guides/external_nodes.html) for a more up to date guide on external nodes.

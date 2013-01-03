@@ -41,7 +41,7 @@ begin
 
 rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, SocketError,
        Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
-    $stderr.puts date + ' ' + script + ": ERROR reaching forman: " + e
+    $stderr.puts date + ' ' + script + ": ERROR reaching forman: " + e.to_s
 end
 
 case res
@@ -60,8 +60,7 @@ else
             instantiation of puppet modules. When there are no directory where \
             these yaml files exist. node.rb fails."
         puts "\n---\nclasses:"
-        exit
-    fi
+    end
     $stderr.puts date + ' ' + script + ": ERROR retrieving node %s from Forman." % [node]
     $stderr.puts date + ' ' + script + 
         ": TRACE retrieving node %s from #{yaml_node_dir}/%s.yml" % [node, node]

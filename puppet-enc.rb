@@ -12,7 +12,7 @@
 foreman_host = ENV['FOREMAN_HOST']     || 'foreman.startsiden.no'
 foreman_port = ENV['FOREMAN_PORT']     || '80'
 foreman_method = ENV['FOREMAN_METHOD'] || 'http'
-yaml_node_dir = ENV['YAML_NODE_DIR'] || '../manifests/yaml'
+yaml_node_dir = ENV['YAML_NODE_DIR'] || '/var/local/puppet/yaml/facts'
 foreman_url = foreman_method + '://' + foreman_host + ':' + foreman_port
 
 node = ARGV[0]

@@ -14,6 +14,9 @@ autoinstallver: 1
 name: startsiden-puppet-enc
 version: 13.09-01
 
+depends:
+  - ruby1.8-dev
+
 excludeext:
   - .git
   - .gitignore

@@ -17,6 +17,8 @@ version: 13.09-01
 excludeext:
   - .git
   - .gitignore
+  - .md
+
 chroot_test: 1
 
 tests: t/

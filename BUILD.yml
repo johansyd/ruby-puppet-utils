@@ -1,0 +1,22 @@
+## name: startsiden-puppet-enc
+#
+### author: Johan Sydseter
+#
+### source: https://github.com/johansyd/startsiden-puppet-selenium-facts
+#
+### license: GNU
+#
+### summary: Puppet external node classifier
+#
+### description: Used to pull in facts from forman and yaml configuration files
+---
+autoinstallver: 1
+name: startsiden-puppet-enc
+version: 13.09-01
+
+excludeext:
+  - .git
+  - .gitignore
+chroot_test: 0
+
+installdir: /usr/local/bin

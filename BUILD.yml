@@ -17,6 +17,6 @@ version: 13.09-01
 excludeext:
   - .git
   - .gitignore
-chroot_test: 0
+chroot_test: 1
 
 installdir: /usr/local/bin
